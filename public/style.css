@@ -1,0 +1,127 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chatSection {
+  width: 90%;
+  max-width: 70%;
+  max-height: 50%;
+  background-color: #fff;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+
+.brand h1 {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #444;
+  margin-left: 10px;
+}
+
+.messageArea {
+  height: 350px;
+  padding: 16px 16px 56px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.message {
+  padding: 20px;
+  border-radius: 4px;
+  margin-bottom: 35px;
+  max-width: 250px;
+  position: relative;
+}
+
+.message h4 {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.incoming {
+  background-color: #494949;
+  color: #fff;
+}
+
+.outgoing {
+  background-color: #437243;
+  color: #fff;
+  margin-left: auto;
+  width: 50%;
+}
+
+.join {
+  background: #8df36f;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-left: 37%;
+  margin-bottom: 30px;
+  width: 30%;
+  border: 3px solid #73ad21;
+  padding: 10px;
+}
+
+.left {
+  background: #f18080;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-left: 37%;
+  margin-bottom: 30px;
+  width: 30%;
+  border: 3px solid #f54242;
+  padding: 10px;
+}
+
+textarea {
+  width: 90%;
+  font-size: 18px;
+  padding: 15px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: #f1efef;
+  vertical-align: middle;
+}
+
+#sendit {
+  background-color: #e5e6e5;
+  color: #000;
+  font-size: 18px;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin-left: 3px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.2s ease-in-out;
+  vertical-align: middle;
+}
+
+#sendit:hover {
+  background-color: blue;
+}
